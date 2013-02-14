@@ -16,8 +16,8 @@
                   type: "GET",
                   data: {arg1:$("#arg1").val(),arg2:$("#arg2").val(),op:$("#op option:selected").val()},
                   success: function(data){
-                    var htmlobj=data.arg1+data.op+data.arg2+"="+data.result;
-                    htmlobj+="<br/>";
+                    var htmlobj=data.arg1+" "+data.op+" "+data.arg2+" = "+data.res;
+                    htmlobj+="\n";
                     $("#history").append(htmlobj);
                   }
               });
